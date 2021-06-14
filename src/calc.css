@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: 70px  repeat(5, 70px) ;
+    
+    grid-row-gap: 5px;
+    grid-column-gap: 20px;
+    background-color: hsl(223, 31%, 20%);
+    grid-template-areas: 
+    "screen screen screen screen"
+    "seven eight nine delete"
+    "four five six add"
+    "one two three minus"
+    "dot zero fowardSlash multiply"
+    "reset reset equal equal";
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+    width: 410px;
+    border-radius: 10px;
+    
+    
+}
+
+/* implicit rows are as high as their content */
+/* we use the property grid-auto-raw to solve the problem */
+/* grid-auto-flow fills the gaps that appear in a grid layout  */
+/* source order independence gives css layout flexibility to arrange regardless of the markup layout */
+/*named lines : the grid has column lines and row lines: 
+
+we can lines using square brackets */
+
+
+
+
+
+
+#screen-div {
+    position: absolute;
+    background-color: hsl(225, 21%, 49%);
+    height: 100px;
+    width: 410px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+   
+}
+
+#screen {
+    
+    background-color: white;
+    grid-area: screen;
+    border-radius: 10px;
+    align-self: stretch; 
+    height: 80px;
+    text-align: end;
+    justify-content: start;
+    font-size: 3rem;
+    padding: 10px 10px;
+
+   
+   
+}
+
+#background {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+    justify-items: center;
+    align-items: center;
+     /* position: relative;
+    height: 70vh;
+    margin: 0 auto;
+    margin: 10vw;
+    bottom: px;
+    width: 90%;
+     left: 20vw;
+    right: 10vw;
+    bottom: vh;;
+    top: 10vh;  */
+     background-color: hsl(225, 21%, 49%);
+}  
+
+
+   #one {
+    background-color: white;
+    grid-area: one;
+
+    border-radius: 10px;
+}
+
+#two {
+    background-color: white;
+    grid-area: two;
+    border-radius: 10px;
+    
+}
+
+#three {
+    background-color: white; 
+    grid-area: three;
+    border-radius: 10px;
+}
+
+#four {
+    background-color: white;
+    grid-area: four;
+    border-radius: 10px;
+}
+
+#five {
+    background-color: white;
+    grid-area: five;
+    border-radius: 10px;
+}
+
+#six {
+    background-color: white;
+    grid-area: six;
+    border-radius: 10px;
+}
+
+#seven {
+    background-color: white;
+    grid-area: seven;
+    border-radius: 10px;
+}
+
+#eight {
+    background-color: white;
+    grid-area: eight;
+    border-radius: 10px;
+    
+    
+}
+
+#nine {
+    background-color: white;
+    grid-area: nine;
+    border-radius: 10px;
+}
+
+#ten {
+    background-color: white;
+    grid-area: ten;
+    border-radius: 10px;
+}
+
+#dot {
+    background-color: white;
+    grid-area: dot;
+    border-radius: 10px;
+    
+}
+
+#fowardSlash {
+    background-color: white;
+    grid-area: fowardSlash;
+    border-radius: 10px;
+}
+
+#delete {
+    background-color: hsl(225, 21%, 49%);
+    grid-area: delete;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 32px;
+    font-family: Spartan;
+    font-weight: 700;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+}
+
+#delete:hover {
+    cursor: pointer;
+}
+
+#add {
+    background-color: white;
+    grid-area: add;
+    border-radius: 10px;
+}
+
+#minus {
+    background-color: white;
+    grid-area: minus;
+    border-radius: 10px;
+}
+
+#multiply {
+    background-color: white;
+    grid-area: multiply;
+    border-radius: 10px;
+}
+
+#zero {
+    background-color: white;
+    grid-area: zero;
+    border-radius: 10px;
+} 
+
+#reset {
+    grid-area: reset;
+    background-color:  hsl(225, 21%, 49%);
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#equal {
+    grid-area: equal;
+    height: 40px;
+    width: 180px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 10px;
+}
+  
+.button {
+    text-align: center;
+    font-size: 32px;
+    font-family: Spartan;
+    font-weight: 700;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+
+}
+
+
+.button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
